@@ -1,0 +1,10 @@
+C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\bin\Debug\SolverGUI_0.1.exe.config
+C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\bin\Debug\SolverGUI_0.1.exe
+C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\bin\Debug\SolverGUI_0.1.pdb
+C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\obj\Debug\SolverGUI_0.1.csprojAssemblyReference.cache
+C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\obj\Debug\SolverGUI_0._1.Form1.resources
+C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\obj\Debug\SolverGUI_0._1.Properties.Resources.resources
+C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\obj\Debug\SolverGUI_0.1.csproj.GenerateResource.cache
+C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\obj\Debug\SolverGUI_0.1.csproj.CoreCompileInputs.cache
+C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\obj\Debug\SolverGUI_0.1.exe
+C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\obj\Debug\SolverGUI_0.1.pdb
