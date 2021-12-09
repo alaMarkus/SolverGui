@@ -7,9 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace SolverGUI_0._1
 {
+    /// <summary>
+    /// Welcome to Clean Code xD
+    /// </summary>
+
+
     public partial class Form1 : Form
     {
         public Form1()
@@ -17,17 +23,23 @@ namespace SolverGUI_0._1
             InitializeComponent();
         }
 
+        private Thread thread;
         private List<DataGridView> dataGridViews;
         private Search search;
 
-        private void createGridViews(List<int[]> path)
+            private void createGridViews(List<int[]> path, string word)
         {
             int size = 30;
-            MyGrid asd = new MyGrid();
+
+            
+            //MyGrid asd = new MyGrid();
+
             dataGridViews.Add(new DataGridView());
             DataGridView grid = dataGridViews.Last<DataGridView>();
             grid.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             grid.DefaultCellStyle.Font = new Font("Tahoma", 15);
+            grid.DefaultCellStyle.SelectionBackColor = Color.White;
+            grid.DefaultCellStyle.SelectionForeColor = Color.Black;
             grid.ScrollBars = ScrollBars.None;
             grid.Height = 123;
             grid.Width = 122;
@@ -67,17 +79,30 @@ namespace SolverGUI_0._1
                 }
             }
 
-            //grid.ClearSelection();
+            
             grid.Enabled = false;
-            flowLayoutPanel1.Controls.Add(grid);
+            Label label = new Label();
+            label.Text = word;
+            label.Font = new Font("Tahoma", 12);
+            Panel panel = new Panel();
+            flowLayoutPanel1.Controls.Add(panel);
+            panel.Width = 150;
+            panel.Height = 160;
+            panel.Controls.Add(grid);
+            panel.Controls.Add(label);
+            label.Location = new Point(0, 130);
+            label.BringToFront();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //generate random letters to fill the grid for testing
             MyGrid asd = new MyGrid();
             int size = 30;
             dataGridView1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 15);
+            //dataGridView1.DefaultCellStyle.SelectionBackColor = Color.White;
+            //dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
             dataGridView1.ScrollBars = ScrollBars.None;
             dataGridView1.Height = 124;
             dataGridView1.Width = 124;
@@ -98,7 +123,7 @@ namespace SolverGUI_0._1
                 }
             }
 
-
+            
             dataGridViews = new List<DataGridView>();
             search = new Search();
         }
@@ -225,7 +250,7 @@ namespace SolverGUI_0._1
 
                                     if (search.getRetval() == 2)
                                     {
-                                        createGridViews(path);
+                                        createGridViews(path,search.getLatesFound());
                                     }
 
                                     //                    System.out.println("path updated with: "+toAdd[0]+","+toAdd[1]);
@@ -279,6 +304,11 @@ namespace SolverGUI_0._1
                 }
             }
             Console.WriteLine("done");
+        }
+
+        private void ThreadTask()
+        {
+
         }
     }
 }

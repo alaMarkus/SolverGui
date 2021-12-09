@@ -17,7 +17,8 @@ namespace SolverGUI_0._1
         public Search()
         {
             found = new List<string>();
-            Word = File.ReadAllText(@"C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\sanalista.txt");
+            //Word = File.ReadAllText(@"C:\Users\Marku\source\repos\SolverGUI_0.1\SolverGUI_0.1\sanalista.txt");
+            Word = Properties.Resources.sanalista;
         }
 
         public List<string> getFound()
@@ -28,6 +29,11 @@ namespace SolverGUI_0._1
         public int getRetval()
         {
             return retval;
+        }
+
+        public string getLatesFound()
+        {
+            return found.Last<string>();
         }
 
         public int find(string toSearch)

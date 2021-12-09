@@ -42,9 +42,9 @@ namespace SolverGUI_0._1
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(100, 169);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(41, 169);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(569, 303);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(711, 303);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // dataGridView1
